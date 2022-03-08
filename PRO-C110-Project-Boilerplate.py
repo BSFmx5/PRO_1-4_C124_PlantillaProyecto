@@ -1,53 +1,53 @@
-# To Capture Frame
+# Para capturar el fotograma
 import cv2
 
-# To process image array
+# Para procesar la matriz de la imagen
 import numpy as np
 
 
-# import the tensorflow modules and load the model
+# Importar el módulo tensorflow y cargar el modelo
 
 
 
-# Attaching Cam indexed as 0, with the application software
+# Adjuntando el índice de la cámara como 0 con la aplicación del software
 camera = cv2.VideoCapture(0)
 
-# Infinite loop
+# Bucle infinito
 while True:
 
-	# Reading / Requesting a Frame from the Camera 
+	# Leyendo/Solicitando un fotograma de la cámara
 	status , frame = camera.read()
 
-	# if we were sucessfully able to read the frame
+	# Si somos capaces de leer exitosamente el fotograma
 	if status:
 
-		# Flip the frame
+		# Voltear la imagen
 		frame = cv2.flip(frame , 1)
 		
 		
 		
-		#resize the frame
+		# Redimensionar el fotograma
 		
-		# expand the dimensions
+		# Expandir las dimensiones 
 		
-		# normalize it before feeding to the model
+		# Normalizar antes de alimentar al modelo
 		
-		# get predictions from the model
+		# Obtener predicciones del modelo
 		
 		
 		
-		# displaying the frames captured
-		cv2.imshow('feed' , frame)
+		# Mostrando los fotogramas capturados
+		cv2.imshow('Alimentar' , frame)
 
-		# waiting for 1ms
+		# Esperando 1ms
 		code = cv2.waitKey(1)
 		
-		# if space key is pressed, break the loop
+		# Si se preciona la barra espaciadora, romper el bucle
 		if code == 32:
 			break
 
-# release the camera from the application software
+# Liberar la cámara de la aplicación del software
 camera.release()
 
-# close the open window
+# Cerrar la ventana abierta
 cv2.destroyAllWindows()
