@@ -1,7 +1,7 @@
 # Para capturar el fotograma
 import cv2
 
-# Para procesar la matriz de la imagen
+# Para procesar la arreglo de la imagen
 import numpy as np
 
 
